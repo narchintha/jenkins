@@ -1,5 +1,6 @@
 ---
   - hosts: all
-    tasks: 
-      - name: stop the container container
-      - shell: docker stop medilab-web-server
+    tasks:
+      - name: run the image
+      - shell: docker run -t --name=medilab-web-server -p 8087:8087 narchintha/medilab-preclinic-img:tagname
+      
