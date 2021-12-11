@@ -1,5 +1,3 @@
 FROM java:8
-RUN mkdir /opt/medilab-preclinic
-WORKDIR  /opt/medilab-preclinic
-COPY medilab-morning-preclinic.war /opt/medilab-preclinic/
-CMD [ "java","-jar","medilab-morning-preclinic.war" ]
+COPY medilab-morning-preclinic-war-0.0.1-SNAPSHOT.war /opt/medilab-preclinic/
+CMD [ "java","-jar","/opt/medilab-preclinic/medilab-morning-preclinic-war-0.0.1-SNAPSHOT.war" ]
