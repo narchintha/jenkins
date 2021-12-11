@@ -3,10 +3,3 @@
     tasks: 
       - name: stop the container container
       - shell: docker stop medilab-web-server
-      - name: remove the container container
-      - shell: docker rm medilab-web-server
-      - name: remove the docker image 
-      - shell: docker rmi medilab-preclinic-img:latest
-      - name: run the image
-      - shell: docker run -t --name=medilab-web-server -p 8087:8087 medilab-preclinic-img:latest
-      
