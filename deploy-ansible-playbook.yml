@@ -1,6 +1,6 @@
 ---
-  - hosts: all
+  - name: Deployment Medi Lab Play Book
+    hosts: all
     tasks:
-      - name: run the image
-      - shell: docker run -t --name=medilab-web-server -p 8087:8087 narchintha/medilab-preclinic-img:tagname
-      
+      - name: Run the 
+      - shell: docker run -d --name=medilab-web-server -p 8087:8087 narchintha/medilab-preclinic-img:2.0
