@@ -8,5 +8,5 @@
       - name: remove the docker image 
       - shell: docker rmi medilab-preclinic-img:latest
       - name: run the image
-      - shell: docker run -t --name=medilab-web-server -p 8087:8087 narchintha/medilab-preclinic-img:latest
+      - shell: docker run -t --name=medilab-web-server -p 8087:8087 medilab-preclinic-img:latest
       
