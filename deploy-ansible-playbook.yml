@@ -1,7 +1,5 @@
 ---
   - hosts: all
     tasks:
-      - name: docker hub login
-        shell: docker login -u narchintha -p Nare@9292
       - name: run the container
         shell: docker run -td --name=medilab-web-app -p 8087:8087 narchintha/medilab-preclinic-img:2.0
